@@ -55,7 +55,7 @@ function initMap() {
     }
   );
 
-  // Define the LatLng coordinates for the polygon's path.
+  // land one
   const triangleCoords = [
     { lat: 23.935707144748452, lng: 89.08784488577032 },
     { lat: 23.935721854002622, lng: 89.08810371894026 },
@@ -63,7 +63,6 @@ function initMap() {
     { lat: 23.93561643764405, lng: 89.08785293239737 },
   ];
 
-  // Construct the polygon.
   const bermudaTriangle = new google.maps.Polygon({
     paths: triangleCoords,
     strokeColor: '#FF0000',
