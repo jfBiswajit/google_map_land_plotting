@@ -62,7 +62,7 @@ function initMap() {
     paths: landOneCordinate,
     strokeColor: '#FF0000',
     strokeOpacity: 0.8,
-    strokeWeight: 2,
+    strokeWeight: 5,
     fillColor: '#FF0000',
     fillOpacity: 0.35,
   });
@@ -79,7 +79,7 @@ function initMap() {
     paths: landTwoCordinate,
     strokeColor: '#FF0000',
     strokeOpacity: 0.8,
-    strokeWeight: 2,
+    strokeWeight: 5,
     fillColor: '#FF0000',
     fillOpacity: 0.35,
   });
@@ -96,7 +96,7 @@ function initMap() {
     paths: landThreeCordinate,
     strokeColor: '#FF0000',
     strokeOpacity: 0.8,
-    strokeWeight: 2,
+    strokeWeight: 5,
     fillColor: '#FF0000',
     fillOpacity: 0.35,
   });
