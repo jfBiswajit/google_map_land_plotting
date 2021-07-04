@@ -15,10 +15,10 @@ function initMap() {
       drawingModes: [google.maps.drawing.OverlayType.POLYGON],
     },
     polygonOptions: {
-      fillColor: '#BCDCF9',
-      fillOpacity: 0.5,
+      fillColor: '#ff0800',
+      fillOpacity: 0.35,
       strokeWeight: 2,
-      strokeColor: '#57ACF9',
+      strokeColor: '#ff0800',
       clickable: false,
       editable: false,
       zIndex: 1,
