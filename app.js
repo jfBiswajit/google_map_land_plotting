@@ -14,6 +14,9 @@ function initMap() {
       position: google.maps.ControlPosition.TOP_CENTER,
       drawingModes: [google.maps.drawing.OverlayType.POLYGON],
     },
+    markerOptions: {
+      visible: false,
+    },
     polygonOptions: {
       fillColor: '#ff0800',
       fillOpacity: 0.35,
