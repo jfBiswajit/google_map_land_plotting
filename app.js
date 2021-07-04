@@ -5,6 +5,7 @@ function initMap() {
   const map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 24.886, lng: -70.268 },
     zoom: 5,
+    clickableIcons: false,
   });
 
   const drawingManager = new google.maps.drawing.DrawingManager({
