@@ -56,15 +56,15 @@ function initMap() {
   );
 
   // land one
-  const triangleCoords = [
+  const landOneCordinate = [
     { lat: 23.935707144748452, lng: 89.08784488577032 },
     { lat: 23.935721854002622, lng: 89.08810371894026 },
     { lat: 23.935631146908552, lng: 89.08810774225378 },
     { lat: 23.93561643764405, lng: 89.08785293239737 },
   ];
 
-  const bermudaTriangle = new google.maps.Polygon({
-    paths: triangleCoords,
+  const landOne = new google.maps.Polygon({
+    paths: landOneCordinate,
     strokeColor: '#FF0000',
     strokeOpacity: 0.8,
     strokeWeight: 2,
@@ -72,5 +72,41 @@ function initMap() {
     fillOpacity: 0.35,
   });
   
-  bermudaTriangle.setMap(map);
+  // land two
+  const landTwoCordinate = [
+    { lat: 23.936088551008456, lng: 89.08922401891432 },
+    { lat: 23.93607751909933, lng: 89.08933935390196 },
+    { lat: 23.93597455456866, lng: 89.08932594285689 },
+    { lat: 23.935989263792358, lng: 89.08920524345122 },
+  ];
+
+  const landTwo = new google.maps.Polygon({
+    paths: landTwoCordinate,
+    strokeColor: '#FF0000',
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: '#FF0000',
+    fillOpacity: 0.35,
+  });
+  
+  // land three
+  const landThreeCordinate = [
+    { lat: 23.934736373658737, lng: 89.0898780214887 },
+    { lat: 23.934616247116857, lng: 89.08984583498052 },
+    { lat: 23.93458682835486, lng: 89.08995580555013 },
+    { lat: 23.934699600239426, lng: 89.08998799205831 },
+  ];
+
+  const landThree = new google.maps.Polygon({
+    paths: landThreeCordinate,
+    strokeColor: '#FF0000',
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: '#FF0000',
+    fillOpacity: 0.35,
+  });
+  
+  landOne.setMap(map);
+  landTwo.setMap(map);
+  landThree.setMap(map);
 }
