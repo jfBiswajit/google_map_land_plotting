@@ -3,7 +3,7 @@
 // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=drawing">
 function initMap() {
   const map = new google.maps.Map(document.getElementById('map'), {
-    center: { lat: 23.93567, lng: 89.08797 },
+    center: { lat: 23.935707144748452, lng: 89.08784488577032 },
     zoom: 20,
   });
 
@@ -47,11 +47,6 @@ function initMap() {
       }
       
       console.log(JSON.stringify(landShape));
-      
-      // map.setCenter({
-      //   lat: 23.8103,
-      //   lng: 90.4125,
-      // });
     }
   );
 
@@ -115,10 +110,12 @@ function initMap() {
   var elements = document.getElementsByClassName('land');
 
   var myFunction = function (event) {
-    const lat = event.target.getAttribute('data-land-lat');
-    const lng = event.target.getAttribute('data-land-lng');
-    const landCordinate = {lat: lat, lng: lng}
-    console.log(landCordinate);
+    const lat = parseFloat(event.target.getAttribute('data-land-lat'));
+    const lng = parseFloat(event.target.getAttribute('data-land-lng'));
+    const landCordinate = { lat: lat, lng: lng };
+
+    map.setCenter(landCordinate);
+    map.setZoom(20);
   };
 
   for (var i = 0; i < elements.length; i++) {
