@@ -109,4 +109,19 @@ function initMap() {
   landOne.setMap(map);
   landTwo.setMap(map);
   landThree.setMap(map);
+  
+  
+  
+  var elements = document.getElementsByClassName('land');
+
+  var myFunction = function (event) {
+    const lat = event.target.getAttribute('data-land-lat');
+    const lng = event.target.getAttribute('data-land-lng');
+    const landCordinate = {lat: lat, lng: lng}
+    console.log(landCordinate);
+  };
+
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('click', myFunction, false);
+  }
 }
