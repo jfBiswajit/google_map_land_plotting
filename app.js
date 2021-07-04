@@ -20,7 +20,7 @@ function initMap() {
     polygonOptions: {
       fillColor: '#ff0800',
       fillOpacity: 0.35,
-      strokeWeight: 2,
+      strokeWeight: 3,
       strokeColor: '#ff0800',
       clickable: false,
       editable: false,
@@ -47,6 +47,11 @@ function initMap() {
       }
       
       console.log(JSON.stringify(landShape));
+      
+      map.setCenter({
+        lat: 23.8103,
+        lng: 90.4125,
+      });
     }
   );
 
