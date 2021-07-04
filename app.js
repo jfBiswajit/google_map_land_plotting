@@ -52,7 +52,7 @@ function initMap() {
     { lat: 32.321, lng: -64.757 },
     { lat: 25.774, lng: -80.19 },
   ];
-  
+
   // Construct the polygon.
   const bermudaTriangle = new google.maps.Polygon({
     paths: triangleCoords,
