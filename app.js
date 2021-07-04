@@ -20,7 +20,7 @@ function initMap() {
     polygonOptions: {
       fillColor: '#ff0800',
       fillOpacity: 0.35,
-      strokeWeight: 3,
+      strokeWeight: 5,
       strokeColor: '#ff0800',
       clickable: false,
       editable: false,
