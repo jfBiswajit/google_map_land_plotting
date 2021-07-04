@@ -39,10 +39,9 @@ function initMap() {
     function (polygon) {
       console.log('polygon complete');
 
-     for (var i = 0; i < polygon.getPath().getLength(); i++) {
-      //  landShape.push({lat:});
-        console.log(polygon.getPath().getAt(i).toUrlValue(6));
-     }
+     polygon.getPath().forEach((point) => {
+       console.log(point);
+     });
     }
   );
 
