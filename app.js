@@ -37,20 +37,30 @@ function initMap() {
     drawingManager,
     'polygoncomplete',
     function (polygon) {
-      console.log('polygon complete');
+      var path = polygon.getPath();
 
-     polygon.getPath().forEach((point) => {
-       console.log(point);
-     });
+      for (var i = 0; i < path.length; i++) {
+        landShape.push({
+          lat: path.getAt(i).lat(),
+          lng: path.getAt(i).lng(),
+        });
+      }
+      
+      console.log(JSON.stringify(landShape));
     }
   );
 
   // Define the LatLng coordinates for the polygon's path.
   const triangleCoords = [
-    { lat: 25.774, lng: -80.19 },
-    { lat: 18.466, lng: -66.118 },
-    { lat: 32.321, lng: -64.757 },
-    { lat: 25.774, lng: -80.19 },
+    { lat: 31.82115566688796, lng: -75.277765625 },
+    { lat: 27.46886055111971, lng: -74.5306953125 },
+    { lat: 28.82500382433339, lng: -80.99065625 },
+    { lat: 30.996033438254603, lng: -77.9584296875 },
+    { lat: 31.97039574462498, lng: -83.1439765625 },
+    { lat: 33.37601053783669, lng: -80.4193671875 },
+    { lat: 32.30529932423105, lng: -65.7416328125 },
+    { lat: 31.03369604870428, lng: -71.937921875 },
+    { lat: 31.97039574462498, lng: -74.48675 },
   ];
 
   // Construct the polygon.
