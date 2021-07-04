@@ -4,7 +4,7 @@
 function initMap() {
   const map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 23.8103, lng: 90.4125 },
-    zoom: 8,
+    zoom: 7,
   });
   const drawingManager = new google.maps.drawing.DrawingManager({
     drawingMode: google.maps.drawing.OverlayType.MARKER,
