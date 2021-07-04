@@ -31,17 +31,18 @@ function initMap() {
   drawingManager.setMap(map);
 
   // Testing
-  var polylines = [];
+  var landShape = [];
 
   google.maps.event.addListener(
     drawingManager,
     'polygoncomplete',
     function (polygon) {
       console.log('polygon complete');
-      polylines.push(polygon);
-      var polylinePath = polygon.getPath();
-      var testPath = polylinePath.getArray();
-      console.log(testPath);
+
+     for (var i = 0; i < polygon.getPath().getLength(); i++) {
+      //  landShape.push({lat:});
+        console.log(polygon.getPath().getAt(i).toUrlValue(6));
+     }
     }
   );
 
