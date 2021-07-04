@@ -11,3 +11,26 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.land_container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.land {
+  padding: 1rem;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  color: #ff0800;
+}
